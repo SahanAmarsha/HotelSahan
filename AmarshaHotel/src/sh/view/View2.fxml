@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="viewAnchor1" maxHeight="800.0" maxWidth="800.0" prefHeight="800.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sh.view.controller.View2Controller">
+    <stylesheets>
+        <URL value="@/sh/view/css/view2.css" />
+    </stylesheets>
+   <children>
+      <Text fontSmoothingType="LCD" layoutX="261.0" layoutY="59.0" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeType="OUTSIDE" strokeWidth="0.0" text="CUSTOMERS" textAlignment="CENTER" wrappingWidth="314.6708984375">
+         <font>
+            <Font name="Leelawadee UI Bold" size="42.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Text>
+      <TableView fx:id="viewTable" layoutX="4.0" layoutY="113.0" prefHeight="291.0" prefWidth="792.0">
+         <columns>
+            <TableColumn prefWidth="76.0" text="ID No" />
+            <TableColumn prefWidth="112.0" text="Name" />
+            <TableColumn prefWidth="58.0" text="Gender" />
+            <TableColumn prefWidth="69.0" text="Address" />
+            <TableColumn prefWidth="79.0" text="Country" />
+            <TableColumn prefWidth="170.0" text="Nationality" />
+            <TableColumn prefWidth="111.0" text="IDNum" />
+            <TableColumn prefWidth="99.0" text="PhoneNum" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="roomPanel" maxHeight="800.0" maxWidth="800.0" prefHeight="800.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="sh.view.controller.RoomController">
+    <stylesheets>
+        <URL value="@/sh/view/css/room.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="43.0" fitWidth="373.0" layoutX="214.0" layoutY="24.0">
+         <image>
+            <Image url="@img/cooltext310336847725657.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="10.0" layoutY="129.0" text="Room No:">
+         <font>
+            <Font name="Times New Roman" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="192.0" text="Room Type:">
+         <font>
+            <Font name="Times New Roman" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="252.0" text="Floor No:">
+         <font>
+            <Font name="Times New Roman" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="306.0" text="Room Price:">
+         <font>
+            <Font name="Times New Roman" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="370.0" text="Room Description:">
+         <font>
+            <Font name="Times New Roman" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="618.0" text="Room Status:">
+         <font>
+            <Font name="Times New Roman" size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="roomnoTxt" layoutX="249.0" layoutY="125.0" prefHeight="38.0" prefWidth="106.0">
+         <font>
+            <Font name="Times New Roman" size="21.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="floornoTxt" layoutX="249.0" layoutY="248.0" prefHeight="38.0" prefWidth="106.0">
+         <font>
+            <Font name="Times New Roman" size="21.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="priceTxt" layoutX="249.0" layoutY="302.0" prefHeight="30.0" prefWidth="267.0">
+         <font>
+            <Font name="Times New Roman" size="21.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="dscTxt" layoutX="249.0" layoutY="359.0" prefHeight="224.0" prefWidth="357.0">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="deleteBtn" layoutX="534.0" layoutY="683.0" mnemonicParsing="false" onAction="#deleteBtnclicked" prefHeight="43.0" prefWidth="106.0" text="DELETE">
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="updateBtn" layoutX="336.0" layoutY="683.0" mnemonicParsing="false" onAction="#updateBtnclicked" prefHeight="43.0" prefWidth="106.0" text="UPDATE">
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="addBtn" layoutX="109.0" layoutY="683.0" mnemonicParsing="false" onAction="#addBtnclicked" prefHeight="43.0" prefWidth="106.0" text="ADD">
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </Button>
+      <JFXComboBox fx:id="roomtypeCmbBx" layoutX="246.0" layoutY="192.0">
+         <unFocusColor>
+            <RadialGradient centerX="1.0" centerY="0.27184466019417475" cycleMethod="REFLECT" focusAngle="50.53" focusDistance="-0.024390243902439046" radius="1.0">
+               <stops>
+                  <Stop color="#b21818" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </unFocusColor>
+         <focusColor>
+            <RadialGradient centerX="0.8465909090909091" centerY="0.27184466019417475" cycleMethod="REFLECT" focusAngle="50.53" focusDistance="-0.09756097560975607" radius="1.0">
+               <stops>
+                  <Stop color="#1236a4" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </focusColor>
+      </JFXComboBox>
+      <JFXComboBox fx:id="statusCmbBx" layoutX="246.0" layoutY="618.0" unFocusColor="#e7ff1a">
+         <focusColor>
+            <RadialGradient centerX="0.8465909090909091" centerY="0.27184466019417475" cycleMethod="REFLECT" focusAngle="50.53" focusDistance="-0.09756097560975607" radius="1.0">
+               <stops>
+                  <Stop color="#1236a4" />
+                  <Stop color="#009aff" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </focusColor>
+      </JFXComboBox>
+      <Button fx:id="searchBtn" layoutX="410.0" layoutY="123.0" mnemonicParsing="false" onAction="#searchBtnclicked" prefHeight="43.0" prefWidth="106.0" text="SEARCH">
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </Button>
+      <Label layoutX="215.0" layoutY="310.0" text="Rs.">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

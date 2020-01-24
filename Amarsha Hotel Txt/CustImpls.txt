@@ -1,0 +1,9 @@
+       
+	String SQL="INSERT INTO customer VALUE(?,?,?,?)";
+        PreparedStatement ps= connection.prepareStatement(SQL);
+        ps.setString(1, t.getId());
+        ps.setString(2, t.getName());
+        ps.setString(3, t.getAddress());
+        ps.setString(4, ""+t.getSalary());
+        int result = ps.executeUpdate();
+        return (result>0);

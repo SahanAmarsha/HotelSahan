@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2018-12-28T23:36:47 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Booking" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9e8888a8-4992-42d1-84d1-990a5973863a">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="roomNo" class="java.lang.String"/>
+	<parameter name="roomType" class="java.lang.String"/>
+	<parameter name="floorNo" class="java.lang.Integer"/>
+	<parameter name="roomPrice" class="java.lang.Double"/>
+	<parameter name="checkInDate" class="java.util.Date"/>
+	<parameter name="checkOutDate" class="java.util.Date"/>
+	<parameter name="cId" class="java.lang.String"/>
+	<parameter name="cName" class="java.lang.String"/>
+	<parameter name="bookingId" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="90" splitType="Stretch">
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="170" y="10" width="226" height="52" uuid="bf3df87c-341f-41fc-9ba8-ae01f7edf206"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[---BOOKING RECEIPT---]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="391" splitType="Stretch">
+			<staticText>
+				<reportElement stretchType="ElementGroupHeight" x="280" y="10" width="100" height="20" uuid="e509c3e0-7e05-44de-900b-efd2b81b48cb"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="16"/>
+				</textElement>
+				<text><![CDATA[Customer Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="ElementGroupHeight" x="280" y="50" width="100" height="20" uuid="fa98b80c-9a3f-49cb-a4e5-b4c23fda3eea"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="16"/>
+				</textElement>
+				<text><![CDATA[Customer ID:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="ElementGroupHeight" x="-10" y="10" width="100" height="20" uuid="42ac4b9c-a9bd-421f-992a-bd06509aa31a"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="16"/>
+				</textElement>
+				<text><![CDATA[Booking ID:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="ElementGroupHeight" x="-10" y="120" width="100" height="20" uuid="f97b9b55-26ee-440f-af59-a0d847abd29f"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="16"/>
+				</textElement>
+				<text><![CDATA[Room No:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="ElementGroupHeight" x="-10" y="170" width="100" height="20" uuid="987bdcb6-a90a-4a93-8d81-6d764aa9be03"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="16"/>
+				</textElement>
+				<text><![CDATA[Room Type:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="ElementGroupHeight" x="-10" y="220" width="100" height="20" uuid="9babe35d-4f45-440e-9058-094432671ef1"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="16"/>
+				</textElement>
+				<text><![CDATA[Floor No:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="ElementGroupHeight" x="-10" y="270" width="100" height="20" uuid="13614b95-930c-4e0b-849b-2bf8bf9cc531"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="16"/>
+				</textElement>
+				<text><![CDATA[Check In Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="ElementGroupHeight" x="-10" y="320" width="100" height="20" uuid="ab0a7d13-4bca-4543-82dd-f8275fdd8964"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="16"/>
+				</textElement>
+				<text><![CDATA[Check Out Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="360" width="450" height="31" uuid="f397a1a8-bdfb-4126-a754-37040da78e05"/>
+				<textElement textAlignment="Center">
+					<font size="18" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[......Thank You for Choosing HOTEL SAHAN.....]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="110" y="115" width="100" height="30" uuid="fd5b80a7-d2c4-442f-8715-4c51140fe05a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{roomNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="165" width="100" height="30" uuid="eed3edd4-80a6-4e2f-8b90-37239713b347"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{roomType}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="215" width="100" height="30" uuid="ce4bc058-633d-41e0-90f7-c52211717c87"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{floorNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="5" width="100" height="30" uuid="e8a07bf3-752b-4b65-a7fc-a4085d834fcd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="40" width="100" height="30" uuid="d34fe754-6946-40e5-8a8c-22683564801f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="5" width="100" height="30" uuid="f8339a27-c68e-49a9-8803-4ea488770a8e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{bookingId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="310" width="100" height="30" uuid="c8c7d8a7-f895-46e7-8d5d-67b7bca6a9e5"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{checkOutDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="265" width="100" height="30" uuid="bf25ce26-b4ca-41c1-af9e-6c17a821318c"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{checkInDate}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
